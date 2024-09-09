@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/farmer-profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+        <form id="profile-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="farm-size">Farm Size (acres):</label>
+            <input type="number" id="farm-size" name="farm-size" required>
+
+            <label for="crops">Crops Grown:</label>
+            <input type="text" id="crops" name="crops" required>
+
+            <label for="techniques">Farming Techniques:</label>
+            <input type="text" id="techniques" name="techniques" required>
+
+            <label for="bank-name">Bank Name:</label>
+            <input type="text" id="bank-name" name="bank-name" required>
+
+            <label for="account-number">Account Number:</label>
+            <input type="text" id="account-number" name="account-number" required>
+
+            <label for="ifsc">IFSC Code:</label>
+            <input type="text" id="ifsc" name="ifsc" required>
+
+            <label for="password">Change Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="two-factor">Two-Factor Authentication:</label>
+            <select id="two-factor" name="two-factor">
+                <option value="enabled">Enabled</option>
+                <option value="disabled">Disabled</option>
+            </select>
+
+            <label for="notifications">Email Notifications:</label>
+            <select id="notifications" name="notifications">
+                <option value="enabled">Enabled</option>
+                <option value="disabled">Disabled</option>
+            </select>
+
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>

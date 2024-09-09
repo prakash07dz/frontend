@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contracts</title>
+    <link rel="stylesheet" href="../css/farmer-new-contracts.css">
+</head>
+<body>
+    <div class="container">
+        <h1>New Contracts</h1>
+        <div class="contract-offer">
+            <h2>Buyer: XYZ Traders</h2>
+            <p><strong>Crop:</strong> Rice</p>
+            <p><strong>Quantity:</strong> 1000 kg</p>
+            <p><strong>Price Offer:</strong> $500</p>
+            <p><strong>Delivery Schedule:</strong> 2024-09-15</p>
+            <p><strong>Terms:</strong> Payment within 30 days of delivery</p>
+            <button class="btn">Accept</button>
+            <button class="btn">Negotiate</button>
+            <button class="btn">Decline</button>
+        </div>
+        <!-- Repeat .contract-offer for more offers -->
+        <h2>Create a New Contract</h2>
+        <form id="new-contract-form">
+            <label for="buyer">Select Buyer:</label>
+            <select id="buyer" name="buyer">
+                <option value="ABC Foods">ABC Foods</option>
+                <option value="XYZ Traders">XYZ Traders</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="crop">Crop Type:</label>
+            <input type="text" id="crop" name="crop" required>
+
+            <label for="quantity">Quantity (kg):</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="price">Proposed Price ($):</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="terms">Terms and Conditions:</label>
+            <textarea id="terms" name="terms" required></textarea>
+
+            <button type="submit" class="btn">Submit Contract</button>
+        </form>
+    </div>
+</body>
+</html>

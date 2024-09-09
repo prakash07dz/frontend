@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Farmer Registration</h2>
+        <form id="registerForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="farm-type">Type of Farm</label>
+            <select id="farm-type" name="farm-type" required>
+                <option value="">Select Farm Type</option>
+                <option value="crop">Crop Farming</option>
+                <option value="livestock">Livestock Farming</option>
+                <option value="mixed">Mixed Farming</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="../js/farmer-registration.js"></script>
+</body>
+</html>
